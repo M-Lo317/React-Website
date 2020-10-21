@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import DefaultLayout from '../layouts/DefaultLayout.jsx';
 import './_app.jsx';
 
