@@ -1,30 +1,59 @@
+html, body, body > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
 header {
     text-align: center;
-    display: block;
+    display: flex;
     width: 100%;
-    padding: 40px;
+    padding-top: 20px;
     color: black;
     font-size: 20px;
 }
 
-main {
-    text-align: right;
-    flex: 1 0 auto;
-    font-family: cursive;
-    margin-top: 80px;
-    margin-bottom: 80px;
+header > .logo-container {
+    display: block;
+    box-sizing: border-box;
+    height: 200px;
 }
 
-nav {
+header > .logo-container > img.logo {
+    height: inherit;
+}
+
+header nav {
     text-align: center;
     display: block;
     width: 100%;
     grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-items: center;
-    position: fixed;
+    position: relative;
     background-color: white;
 }
+
+header nav .navbar-toggler {
+    display: none;
+    height: 80px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: right;
+    flex: 1 0 auto;
+    font-family: cursive;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 
 /* nav a :hover {
     background-color: mediumvioletred;
@@ -60,6 +89,7 @@ li a {
 }
 
 footer {
+    display: flex;
     color: gray;
     text-align: left;
     font-size: 20px;
@@ -68,5 +98,52 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-shrink: 0;
     
+}
+
+
+@media all and (max-width: 600px)  {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    header .logo-container {
+        height: 80px;
+    }
+
+    header nav {
+        width: 80px;
+    }
+
+    header nav .navbar-toggler {
+        display: flex;
+    }
+
+    header nav .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    header nav .navbar.open {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 95px;
+        position: fixed;
+        background-color: black;
+    }
+
+    header nav .navbar .navbar-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav .navbar .navbar-links a {
+        color: white;
+    }
+
+    /* header nav  */
 }
 

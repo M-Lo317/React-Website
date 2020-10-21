@@ -1,26 +1,54 @@
 import React from 'react';
+import Link from 'next/link';
 
-const Navbar = () => {
-  return (
-    <div >
-      <nav className="navbar navbar-expand-lg navbar-light" > 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav m-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href='#'>Home</a>
+class Navbar extends React.Component {
+
+  state = {
+    open: false
+  }
+
+  handleNavbarToggle = () => {
+    this.setState(prevState => ({
+      open: !prevState.open
+    }))
+  }
+
+  render() {
+    return (
+      <nav>
+        <div className="navbar-toggler">
+          <button className="navbar-toggler-button" onClick={() => this.handleNavbarToggle()}>
+            III
+          </button>
+        </div> 
+        <div className={this.state.open ? "navbar open" : "navbar" }>
+          <ul className="navbar-links">
+            <li className="">
+              <Link href="/">
+                <a className="">
+                  Home
+                </a>
+              </Link>
             </li>
-            <li className="nav-item active">
-              <a className="nav-link" href="#">Images</a>
+            <li className="">
+              <Link href="/images">
+              <a className="">
+                Images
+              </a>
+              </Link>
             </li>
-            <li className="nav-item active">
-              <a className="nav-link disabled" href="#">About</a>
+            <li className="">
+              <Link href="/about">
+                <a className="">
+                  About
+                </a>
+              </Link>
             </li>  
           </ul>
         </div>
       </nav>
-
-    </div>
-  );
+    );
+  }
 };
 
 export default Navbar;
