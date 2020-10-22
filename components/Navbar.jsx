@@ -18,7 +18,7 @@ class Navbar extends React.Component {
       <nav>
         <div className="navbar-toggler">
           <button className="navbar-toggler-button" onClick={() => this.handleNavbarToggle()}>
-            III
+            <i className="fas fa-paint-brush fa-x2"></i>
           </button>
         </div> 
         <div className={this.state.open ? "navbar open" : "navbar" }>

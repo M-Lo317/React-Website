@@ -40,6 +40,12 @@ header nav .navbar-toggler {
     height: 80px;
 }
 
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
 
 main {
     display: flex;
@@ -53,30 +59,6 @@ main {
     margin-left: 15px;
     margin-right: 15px;
 }
-
-
-/* nav a :hover {
-    background-color: mediumvioletred;
-} */
-
-/* nav-centered a {
-    flex: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-} */
-
-/* nav a :active {
-    color: magenta;
-} */
-
-/* @media screen and (max-width: 600px) {
-    nav a {
-        flex: none;
-        display: block;
-    }
-} */
 
 li {
     display: inline;
@@ -132,7 +114,7 @@ footer {
         left: 0;
         top: 95px;
         position: fixed;
-        background-color: black;
+        background-color: white;
     }
 
     header nav .navbar .navbar-links {
@@ -141,9 +123,15 @@ footer {
     }
 
     header nav .navbar .navbar-links a {
-        color: white;
+        color: black;
     }
-
-    /* header nav  */
 }
 
+h1 {
+    text-align: center;
+    text-emphasis: none;
+}
+
+h2 {
+    text-align: center;
+}
