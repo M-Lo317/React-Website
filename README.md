@@ -2,6 +2,8 @@
 
 Project build with React.js & Next.js
 
+Live version of [website](http://mloart.amz-x.com)
+
 ## Requirements
 
 - NodeJS 12.x LTS
