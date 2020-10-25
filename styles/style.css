@@ -188,7 +188,7 @@ h2 {
 @media all and (max-width: 600px)  {
     header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 15px;
     }
