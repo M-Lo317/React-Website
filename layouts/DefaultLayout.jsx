@@ -1,4 +1,9 @@
 import React from 'react';
+
+// Base
+import '../pages/_app.jsx';
+
+// Components
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 

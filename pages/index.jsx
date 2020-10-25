@@ -1,8 +1,5 @@
 import React from 'react';
 import DefaultLayout from '../layouts/DefaultLayout.jsx';
-import './_app.jsx';
-
-import { fadeIn } from 'react-animations'
 
 const Home = () => {
     return (

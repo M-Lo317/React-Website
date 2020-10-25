@@ -1,3 +1,5 @@
 # folders
 .next
+build
+out
 node_modules

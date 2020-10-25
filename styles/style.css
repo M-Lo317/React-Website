@@ -10,6 +10,7 @@ html, body, body > div {
 header {
     text-align: center;
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding-top: 20px;
     color: black;
@@ -28,9 +29,9 @@ header > .logo-container > img.logo {
 
 header nav {
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-items: center;
     position: relative;

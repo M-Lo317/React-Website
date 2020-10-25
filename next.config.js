@@ -1,7 +1,7 @@
 // Configuration
 module.exports = {
     distDir: 'build',
-    exportTrailingSlash: false,
+    trailingSlash: false,
     exportPathMap: function() {
         return {
             '/index.html': { page: '/' },
