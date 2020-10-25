@@ -7,29 +7,29 @@ const Carousel = () => {
     {
       src: '/images/dream.jpg',
       altText: 'dream',
-      caption: 'Slide 1',
-      header: 'Slide 1 Header',
+      caption: 'For Sale',
+      header: 'Dream',
       key: '1'
     },
     {
       src: '/images/peacock.jpg',
       altText: 'peacock',
-      caption: 'Slide 2',
-      header: 'Slide 2 Header',
+      caption: 'Sold',
+      header: 'Eruption',
       key: '2'
     },
     {
       src: '/images/scream.jpg',
       altText: 'scream',
-      caption: 'Slide 3',
-      header: 'Slide 3 Header',
+      caption: 'For Sale',
+      header: 'Galaxy',
       key: '3'
     },
     {
       src: '/images/trees.jpg',
       altText: 'trees',
-      caption: 'Slide 4',
-      header: 'Slide 4 Header',
+      caption: 'Sold',
+      header: 'Trees',
       key: '4'
     }
   ];
