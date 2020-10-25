@@ -6,7 +6,7 @@ const DefaultLayout = (props) => {
     return (
         <>
             <Header />
-            <main>
+            <main className={props.classNames ? `page container ${props.classNames}` : `page container`}>
                 {props.children}
             </main>
             <Footer />

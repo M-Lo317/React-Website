@@ -4,7 +4,7 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 const Images = () => {
     return(
-        <DefaultLayout>
+        <DefaultLayout classNames="images">
             <h1>Completed Work</h1>
             <Carousel />
         </DefaultLayout>

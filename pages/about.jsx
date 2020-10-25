@@ -3,7 +3,7 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 const About = () => {
     return(
-        <DefaultLayout>
+        <DefaultLayout classNames="about">
             <h1>
                 Bio:
                 <br/>

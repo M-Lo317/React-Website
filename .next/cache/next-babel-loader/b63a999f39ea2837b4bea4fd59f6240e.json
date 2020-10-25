@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nexport default Home;","map":{"version":3,"sources":["/home/m-lo/Desktop/WebDevelopment/FinalProject/FinalP/pages/Components/Images.js"],"names":["React","Home"],"mappings":"AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAEA,eAAeC,IAAf","sourcesContent":["import React from \"react\"\n\nexport default Home"]},"metadata":{},"sourceType":"module"}
