@@ -23,6 +23,15 @@ npm run dev
 
 ## Production
 
+
+### Build 
+
 ```bash
 npm run build
+```
+
+### Test
+
+```bash
+npm run serve
 ```
